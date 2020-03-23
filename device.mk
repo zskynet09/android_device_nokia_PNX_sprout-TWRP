@@ -18,6 +18,9 @@
 
 LOCAL_PATH := device/nokia/PNX_sprout
 
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+
 # define hardware platform
 PRODUCT_PLATFORM := sdm710
 
