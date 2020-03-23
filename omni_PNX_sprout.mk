@@ -18,9 +18,11 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/embedded.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+
+# Inherit base makefile
+$(call inherit-product, build/target/product/base.mk)
 
 # Inherit from PNX_sprout device
 $(call inherit-product, device/nokia/PNX_sprout/device.mk)
