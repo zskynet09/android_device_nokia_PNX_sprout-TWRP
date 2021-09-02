@@ -101,6 +101,7 @@ TW_USE_TOOLBOX := true
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 128
+RECOVERY_SDCARD_ON_DATA := true
 
 # Debug flags
 TWRP_INCLUDE_LOGCAT := true
