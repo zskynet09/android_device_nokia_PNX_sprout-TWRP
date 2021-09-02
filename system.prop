@@ -1,0 +1,4 @@
+ro.display.series=Nokia 8.1
+ro.product.board=sdm710
+ro.board.platform=sdm710
+ro.treble.enabled=true
