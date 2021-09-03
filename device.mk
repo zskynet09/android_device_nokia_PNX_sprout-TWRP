@@ -18,6 +18,9 @@
 
 LOCAL_PATH := device/nokia/PNX_sprout
 
+# define hardware platform
+PRODUCT_PLATFORM := sdm710
+
 # A/B
 AB_OTA_PARTITIONS += \
     boot \
@@ -40,16 +43,12 @@ PRODUCT_PACKAGES += \
 # Boot control HAL
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service
-
-PRODUCT_PACKAGES += \
-    bootctrl.sdm710
-
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.sdm710 \
-    libgptutils \
-    libz \
-    libcutils
+    android.hardware.boot@1.0-service \
+    android.hardware.boot@1.0-impl-wrapper.recovery \
+    android.hardware.boot@1.0-impl-wrapper \
+    android.hardware.boot@1.0-impl.recovery \
+    bootctrl.$(PRODUCT_PLATFORM) \
+    bootctrl.$(PRODUCT_PLATFORM).recovery
 
 # Apex libraries
 PRODUCT_COPY_FILES += \
