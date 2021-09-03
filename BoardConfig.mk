@@ -120,3 +120,6 @@ TW_INCLUDE_RESETPROP := true
 # Debug flags
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+
+# Extra
+BOARD_PROVIDES_GPTUTILS := true
