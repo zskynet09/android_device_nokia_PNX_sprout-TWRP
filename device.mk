@@ -63,3 +63,7 @@ PRODUCT_PACKAGES += \
 # Properties for decryption
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.build.security_patch=2099-12-31
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
