@@ -18,3 +18,8 @@
 
 PRODUCT_MAKEFILES := \
      $(LOCAL_DIR)/omni_PNX_sprout.mk
+
+COMMON_LUNCH_CHOICES := \
+    omni_PNX_sprout-user \
+    omni_PNX_sprout-userdebug \
+    omni_PNX_sprout-eng
