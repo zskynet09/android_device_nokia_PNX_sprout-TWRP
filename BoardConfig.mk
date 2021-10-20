@@ -111,6 +111,7 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     ashmemd \
     ashmemd_aidl_interface-cpp \
     libashmemd_client \
+    libandroidicu \
     libcap \
     libicui18n \
     libion \
