@@ -117,6 +117,7 @@ TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_Y_OFFSET := 89
 TW_H_OFFSET := -89
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
+TW_INCLUDE_RESETPROP := true
 
 # Debug flags
 TWRP_INCLUDE_LOGCAT := true
