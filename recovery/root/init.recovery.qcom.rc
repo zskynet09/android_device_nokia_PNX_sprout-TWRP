@@ -36,6 +36,14 @@ on init
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
+    start qseecomd
+
+service qseecomd /system/bin/qseecomd
+    user root
+    group root
+    setenv LD_LIBRARY_PATH /system/bin:/vendor/lib64:/vendor/lib64/hw
+    disabled
+    seclabel u:r:recovery:s0
 
 on boot
     # Workaround for adb not coming up
