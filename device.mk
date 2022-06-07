@@ -16,6 +16,9 @@
 # limitations under the License.
 #
 
+# API
+PRODUCT_SHIPPING_API_LEVEL := 27
+
 # define hardware platform
 PRODUCT_PLATFORM := sdm710
 
