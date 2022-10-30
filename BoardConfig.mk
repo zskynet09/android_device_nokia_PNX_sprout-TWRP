@@ -123,6 +123,7 @@ TW_Y_OFFSET := 89
 TW_H_OFFSET := -89
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
 TW_INCLUDE_RESETPROP := true
+TW_USE_FSCRYPT_POLICY := 1
 
 # Debug flags
 TWRP_INCLUDE_LOGCAT := true
