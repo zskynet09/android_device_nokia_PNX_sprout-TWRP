@@ -144,3 +144,7 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libcap.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so
+
+# Generate a zip when building TWRP.
+USE_RECOVERY_INSTALLER := true
+RECOVERY_INSTALLER_PATH := device/nokia/PNX_sprout/installer
